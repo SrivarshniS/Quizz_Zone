@@ -10,6 +10,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Server is ready");
+});
+
 app.use("/api/participants", participantsRoute);
 
 // REQUIRED FOR RENDER - Change made here and issue is solved.
