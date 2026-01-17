@@ -53,6 +53,8 @@ export default function ResultsScreen({ score, participant, selectedDomain, onRe
           <p>
             Well played, <strong>{participant?.name || 'Player'}</strong>!
           </p>
+          
+          <br/>
 
           <button className="btn" onClick={onRestart}>
             NEXT CONTESTANT
