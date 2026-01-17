@@ -1,13 +1,34 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import helmet from "helmet";
+import rateLimit from "express-rate-limit";
 import participantsRoute from "./routes/participants.js";
 
 dotenv.config();
 
 const app = express();
 
-app.use(cors());
+// Security Headers
+app.use(helmet());
+
+// Rate Limiting (100 requests per 15 minutes)
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, 
+  max: 100,
+  standardHeaders: true, 
+  legacyHeaders: false, 
+});
+app.use(limiter);
+
+// Update CORS to allow specific origins in production
+// For now, we allow all, but you should restrict this to your frontend domain in production
+app.use(cors({
+   origin: process.env.FRONTEND_URL || "*", 
+   methods: ["GET", "POST"],
+   credentials: true
+}));
+
 app.use(express.json());
 
 app.get("/", (req, res) => {

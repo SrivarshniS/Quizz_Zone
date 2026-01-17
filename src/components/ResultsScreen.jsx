@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { API_BASE_URL } from "../config";
 
 export default function ResultsScreen({ score, participant, selectedDomain, onRestart }) {
 
@@ -15,7 +16,7 @@ export default function ResultsScreen({ score, participant, selectedDomain, onRe
     hasSubmitted.current = true;
     console.log("SENDING SCORE:", participant.id || participant._id, score, selectedDomain);
 
-    fetch("/api/participants/update-score", {
+    fetch(`${API_BASE_URL}/participants/update-score`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

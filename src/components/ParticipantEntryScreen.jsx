@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { API_BASE_URL } from "../config";
 
 export default function ParticipantEntryScreen({ onJoin }) {
   const [name, setName] = useState('');
@@ -13,7 +14,7 @@ export default function ParticipantEntryScreen({ onJoin }) {
     ? { name }
     : { id };
 
-  const res = await fetch("/api/participants/join", {
+  const res = await fetch(`${API_BASE_URL}/participants/join`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload)

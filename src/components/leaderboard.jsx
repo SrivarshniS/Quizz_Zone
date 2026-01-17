@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { domains } from "../data/quizData";
+import { API_BASE_URL } from "../config";
 
 export default function LeaderboardScreen() {
   const [participants, setParticipants] = useState([]);
@@ -10,7 +11,7 @@ export default function LeaderboardScreen() {
   useEffect(() => {
     const fetchLeaderboard = async () => {
       try {
-        const res = await fetch("/api/participants/leaderboard");
+        const res = await fetch(`${API_BASE_URL}/participants/leaderboard`);
         const data = await res.json();
         if (data.success) {
           setParticipants(data.leaderboards);
