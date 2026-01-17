@@ -12,12 +12,9 @@ app.use(express.json());
 
 app.use("/api/participants", participantsRoute);
 
-app.use("/api/participants", participantsRoute);
+// REQUIRED FOR RENDER - Change made here and issue is solved.
+const PORT = process.env.PORT || 5000;
 
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(5000, () => {
-    console.log("Server running on port 5000");
-  });
-}
-
-export default app;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
