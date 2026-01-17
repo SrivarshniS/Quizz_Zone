@@ -31,7 +31,7 @@ export default function ParticipantEntryScreen({ onJoin }) {
     onJoin(data.participant);
   } catch (error) {
     console.error("Join error:", error);
-    alert("Failed to connect to server. Check console for details.");
+    alert(`Failed to connect to server: ${error.message}. \n\nCheck if the Backend is awake!`);
   }
 };
 
