@@ -50,11 +50,9 @@ export default function ResultsScreen({ score, participant, selectedDomain, onRe
 
           <h1 style={{ fontSize: '8rem' }}>{score}</h1>
 
-          <p>
+          <p style={{ marginBottom: '2rem' }}>
             Well played, <strong>{participant?.name || 'Player'}</strong>!
           </p>
-          
-          <br/>
 
           <button className="btn" onClick={onRestart}>
             NEXT CONTESTANT
