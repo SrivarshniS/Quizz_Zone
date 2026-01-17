@@ -1,0 +1,16 @@
+.ripple-grid {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+
+    /* IMPORTANT */
+    z-index: -1;
+    /* stay behind content */
+    pointer-events: none;
+    /* allow clicks on UI */
+
+    background: #05070a;
+    /* dark base like reactbits */
+    overflow: hidden;
+}

@@ -1,0 +1,244 @@
+:root {
+  /* Neon Palette */
+  --bg-dark: #000000;
+
+  --primary-color: #00f3ff;
+  /* Cyan Neon */
+  --primary-glow: rgba(0, 243, 255, 0.6);
+  --accent-color: #ff00ff;
+  /* Magenta Neon */
+  --accent-glow: rgba(255, 0, 255, 0.6);
+
+  --surface-color: rgba(20, 20, 20, 0.6);
+  --surface-border: rgba(255, 255, 255, 0.15);
+  --surface-hover: rgba(0, 243, 255, 0.1);
+
+  --success-color: #00ff66;
+  --success-glow: rgba(0, 255, 102, 0.5);
+  --error-color: #ff3333;
+  --error-glow: rgba(255, 51, 51, 0.5);
+
+  --text-main: #ffffff;
+  --text-muted: #b3b3b3;
+
+  /* Typography */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.5;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+}
+
+/* Reusable Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-glow);
+    border-color: var(--primary-color);
+  }
+
+  50% {
+    box-shadow: 0 0 25px var(--primary-color), 0 0 50px var(--primary-glow);
+    border-color: #fff;
+  }
+
+  100% {
+    box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-glow);
+    border-color: var(--primary-color);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Utilities */
+.screen-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fadeIn 0.8s ease-out;
+  position: relative;
+  z-index: 10;
+}
+
+.card {
+  background: var(--surface-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  /* More techy, less round */
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Cyber corner accent for cards */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+.btn {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  /* Tech boxy */
+  padding: 1.2rem 3rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 15px var(--primary-glow);
+  text-shadow: 0 0 5px var(--primary-glow);
+}
+
+.btn:hover {
+  background: var(--primary-color);
+  color: black;
+  box-shadow: 0 0 40px var(--primary-glow);
+  transform: translateY(-2px);
+  text-shadow: none;
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-option {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--surface-border);
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: left;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.btn-option:hover {
+  background: rgba(0, 243, 255, 0.1);
+  border-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+}
+
+.btn-option .option-label {
+  background: rgba(255, 255, 255, 0.1);
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.input-field {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--surface-border);
+  border-bottom: 2px solid var(--text-muted);
+  color: var(--text-main);
+  padding: 1.25rem;
+  font-size: 1.2rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  outline: none;
+  font-family: var(--font-display);
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
+
+/* Animations Classes */
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse {
+  animation: neonPulse 2s infinite;
+}
