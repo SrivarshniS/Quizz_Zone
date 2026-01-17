@@ -14,20 +14,25 @@ export default function ParticipantEntryScreen({ onJoin }) {
     ? { name }
     : { id };
 
-  const res = await fetch(`${API_BASE_URL}/participants/join`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload)
-  });
+  try {
+    const res = await fetch(`${API_BASE_URL}/participants/join`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
 
-  const data = await res.json();
+    const data = await res.json();
 
-  if (!data.success) {
-    alert("Invalid participant");
-    return;
+    if (!data.success) {
+      alert("Invalid participant or server error");
+      return;
+    }
+
+    onJoin(data.participant);
+  } catch (error) {
+    console.error("Join error:", error);
+    alert("Failed to connect to server. Check console for details.");
   }
-
-  onJoin(data.participant); // ✅ this will now run
 };
 
 

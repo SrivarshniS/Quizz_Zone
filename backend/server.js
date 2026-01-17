@@ -25,8 +25,7 @@ app.use(limiter);
 // For now, we allow all, but you should restrict this to your frontend domain in production
 app.use(cors({
    origin: process.env.FRONTEND_URL || "*", 
-   methods: ["GET", "POST"],
-   credentials: true
+   methods: ["GET", "POST"]
 }));
 
 app.use(express.json());
