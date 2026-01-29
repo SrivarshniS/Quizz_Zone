@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import LeaderboardScreen from './leaderboard';
-//import wtmLogo from '../assets/WTM.png';
+import wtmLogo from '../assets/WTM.png';
 import shebuilds from '../assets/shebuilds1.png';
 
 export default function HomeScreen({ onStart, leaderboards }) {
@@ -29,7 +29,7 @@ export default function HomeScreen({ onStart, leaderboards }) {
       )}
 
       <div className="hero-section animate-float" style={{ textAlign: 'center', marginBottom: '4rem', zIndex: 2 }}>
-        <img src={shebuilds} alt="Shebuilds Logo" style={{ maxWidth: '600px', marginBottom: '0.0rem'}} />
+        <img src={wtmLogo} alt="Women Techmakers Logo" style={{ maxWidth: '200px', marginBottom: '0.0rem'}} />
         <h1 style={{ 
           textAlign: "center",
           fontSize: '5rem', 
