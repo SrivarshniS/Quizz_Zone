@@ -50,7 +50,7 @@ export default function HomeScreen({ onStart, leaderboards }) {
           letterSpacing: '4px',
           fontWeight: 600
         }}>
-         {"  "} &lt;powered by Shebuilds in collaboration with Women Techmakers/&gt;
+         {"  "} &lt;powered by Shebuilds in collab with WTM/&gt;
         </h2>
         
         <div style={{ marginTop: '4rem' }}>
