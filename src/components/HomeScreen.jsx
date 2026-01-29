@@ -29,7 +29,7 @@ export default function HomeScreen({ onStart, leaderboards }) {
       )}
 
       <div className="hero-section animate-float" style={{ textAlign: 'center', marginBottom: '4rem', zIndex: 2 }}>
-        <img src={shebuilds} alt="Women Techmakers Logo" style={{ maxWidth: '200px', marginBottom: '0.0rem',filter: 'drop-shadow(0 0 10px #f4eff7ff) drop-shadow(0 0 20px #454646ff)' }} />
+        <img src={shebuilds} alt="Women Techmakers Logo" style={{ maxWidth: '200px', marginBottom: '0.0rem',filter: 'drop-shadow(0 0 10px #2a2a2bff) drop-shadow(0 0 20px #ffffffff)' }} />
         <h1 style={{ 
           textAlign: "center",
           fontSize: '5rem', 
