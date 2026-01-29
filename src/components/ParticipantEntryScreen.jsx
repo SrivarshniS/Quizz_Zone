@@ -57,7 +57,7 @@ export default function ParticipantEntryScreen({ onJoin }) {
           <h3 style={{ textAlign: 'center', color:'grey'}}>OR</h3>
           <br/>
           <div style={{ marginBottom: '2rem' }}>
-            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Participant ID</label>
+            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Participant Email-ID</label>
             <input 
               type="text" 
               className="input-field" 
