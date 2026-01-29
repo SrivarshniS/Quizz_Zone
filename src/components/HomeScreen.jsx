@@ -29,7 +29,7 @@ export default function HomeScreen({ onStart, leaderboards }) {
       )}
 
       <div className="hero-section animate-float" style={{ textAlign: 'center', marginBottom: '4rem', zIndex: 2 }}>
-        <img src={shebuilds} alt="Shebuilds Logo" style={{ maxWidth: '400px', marginBottom: '0.0rem'}} />
+        <img src={shebuilds} alt="Shebuilds Logo" style={{ maxWidth: '600px', marginBottom: '0.0rem'}} />
         <h1 style={{ 
           textAlign: "center",
           fontSize: '5rem', 
