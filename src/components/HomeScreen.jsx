@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import LeaderboardScreen from './leaderboard';
-import wtmLogo from '../assets/WTM.png';
+//import wtmLogo from '../assets/WTM.png';
+import shebuilds from '../assets/shebuilds.png';
 
 export default function HomeScreen({ onStart, leaderboards }) {
   const [showLeaderboard, setShowLeaderboard] = useState(false);
 
   return (
     <div className="screen-container home-screen">
-      {/* Leaderboard Modal Overlay */}
       {showLeaderboard && (
         <div style={{
           position: 'fixed',
@@ -29,7 +29,7 @@ export default function HomeScreen({ onStart, leaderboards }) {
       )}
 
       <div className="hero-section animate-float" style={{ textAlign: 'center', marginBottom: '4rem', zIndex: 2 }}>
-        <img src={wtmLogo} alt="Women Techmakers Logo" style={{ maxWidth: '200px', marginBottom: '0.0rem' }} />
+        <img src={shebuilds} alt="Women Techmakers Logo" style={{ maxWidth: '200px', marginBottom: '0.0rem' }} />
         <h1 style={{ 
           textAlign: "center",
           fontSize: '5rem', 
