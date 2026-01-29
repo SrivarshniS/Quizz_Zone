@@ -61,7 +61,7 @@ export default function ParticipantEntryScreen({ onJoin }) {
             <input 
               type="text" 
               className="input-field" 
-              placeholder="e.g. CS-2026-001" 
+              placeholder="e.g. shebuilds@gmail.com" 
               value={id}
               onChange={(e) => setId(e.target.value)}
             />
