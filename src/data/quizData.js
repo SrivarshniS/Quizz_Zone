@@ -1,10 +1,10 @@
 export const domains = [
-  { id: 'cyber', name: 'Cybersecurity' },
-  { id: 'ai', name: 'AI & ML' },
-  { id: 'web', name: 'Web Dev' },
-  { id: 'cloud', name: 'Cloud' },
-  { id: 'iot', name: 'IoT' },
-  { id: 'blockchain', name: 'Blockchain' }
+  { id: "cyber", name: "Cybersecurity" },
+  { id: "ai", name: "AI & ML" },
+  { id: "web", name: "Web Dev" },
+  { id: "cloud", name: "Cloud" },
+  { id: "iot", name: "IoT" },
+  { id: "blockchain", name: "Blockchain" },
 ];
 
 export const questions = {
@@ -12,117 +12,520 @@ export const questions = {
     {
       id: 1,
       question: "What does SQL stand for in SQL Injection?",
-      options: ["Structured Query Language", "Strong Question Language", "Structured Quick Line", "System Query Link"],
-      answer: 0
+      options: [
+        "Structured Query Language",
+        "Strong Question Language",
+        "Structured Quick Line",
+        "System Query Link",
+      ],
+      answer: 0,
     },
     {
       id: 2,
       question: "Which protocol is known as secure HTTP?",
       options: ["HTTPx", "S-HTTP", "HTTPS", "SSL"],
-      answer: 2
+      answer: 2,
     },
     {
       id: 3,
       question: "What is a 'White Hat' hacker?",
-      options: ["Malicious hacker", "Ethical hacker", "Government spy", "Hardware engineer"],
-      answer: 1
+      options: [
+        "Malicious hacker",
+        "Ethical hacker",
+        "Government spy",
+        "Hardware engineer",
+      ],
+      answer: 1,
     },
     {
       id: 4,
       question: "What does Phishing involve?",
-      options: ["Fishing for data", "Fraudulent emails", "Network sniffers", "Password cracking"],
-      answer: 1
+      options: [
+        "Fishing for data",
+        "Fraudulent emails",
+        "Network sniffers",
+        "Password cracking",
+      ],
+      answer: 1,
     },
     {
       id: 5,
       question: "Which constitutes 2FA?",
-      options: ["Password + PIN", "Password + OTP", "Retina + Fingerprint", "Username + Bio"],
-      answer: 1
-    }
+      options: [
+        "Password + PIN",
+        "Password + OTP",
+        "Retina + Fingerprint",
+        "Username + Bio",
+      ],
+      answer: 1,
+    },
+    {
+      id: 6,
+      question:
+        "Which attack tricks users into revealing personal information?",
+      options: ["DDoS", "Phishing", "SQL Injection", "Brute Force"],
+      answer: 1,
+    },
+    {
+      id: 7,
+      question: "What does a firewall mainly do?",
+      options: [
+        "Stores passwords",
+        "Blocks unauthorized network traffic",
+        "Encrypts emails",
+        "Speeds up internet",
+      ],
+      answer: 1,
+    },
+    {
+      id: 8,
+      question: "Which is the strongest password?",
+      options: ["password123", "John2024", "P@9#Lm2!", "abcdef"],
+      answer: 2,
+    },
+    {
+      id: 9,
+      question: "What is ransomware?",
+      options: [
+        "Software that steals passwords",
+        "Malware that locks files for money",
+        "Virus that deletes OS",
+        "Tool for scanning networks",
+      ],
+      answer: 1,
+    },
+    {
+      id: 10,
+      question: "Which practice improves account security the most?",
+      options: [
+        "Reusing passwords",
+        "Disabling antivirus",
+        "Enabling Two-Factor Authentication",
+        "Using public Wi-Fi",
+      ],
+      answer: 2,
+    },
   ],
   ai: [
     {
       id: 1,
       question: "What is the term for a machine passing for a human?",
-      options: ["Turing Test", "Voight-Kampff", "Intelligence Quotient", "Singularity"],
-      answer: 0
+      options: [
+        "Turing Test",
+        "Voight-Kampff",
+        "Intelligence Quotient",
+        "Singularity",
+      ],
+      answer: 0,
     },
     {
       id: 2,
       question: "Which language is most popular for AI?",
       options: ["Java", "C++", "Python", "Rust"],
-      answer: 2
+      answer: 2,
     },
     {
       id: 3,
       question: "What is a Neural Network modeled after?",
       options: ["Computer Chips", "Human Brain", "Solar System", "Ant Colony"],
-      answer: 1
+      answer: 1,
     },
     {
       id: 4,
       question: "What does NLP stand for?",
-      options: ["Natural Language Processing", "Neural Link Protocol", "Network Latency Ping", "New Learning Paradigm"],
-      answer: 0
+      options: [
+        "Natural Language Processing",
+        "Neural Link Protocol",
+        "Network Latency Ping",
+        "New Learning Paradigm",
+      ],
+      answer: 0,
     },
     {
       id: 5,
       question: "Who is often called the father of AI?",
       options: ["Alan Turing", "John McCarthy", "Elon Musk", "Bill Gates"],
-      answer: 1
-    }
+      answer: 1,
+    },
+    {
+      id: 6,
+      question: "What does AI stand for?",
+      options: [
+        "Automated Internet",
+        "Artificial Intelligence",
+        "Advanced Interface",
+        "Applied Information",
+      ],
+      answer: 1,
+    },
+    {
+      id: 7,
+      question: "Which type of AI learns from labeled data?",
+      options: [
+        "Reinforcement Learning",
+        "Unsupervised Learning",
+        "Supervised Learning",
+        "Deep Learning",
+      ],
+      answer: 2,
+    },
+    {
+      id: 8,
+      question: "Which algorithm is commonly used for classification?",
+      options: ["Linear Regression", "K-Means", "Decision Tree", "Apriori"],
+      answer: 2,
+    },
+    {
+      id: 9,
+      question: "What is a neural network inspired by?",
+      options: [
+        "Computer memory",
+        "Human brain",
+        "Electric circuits",
+        "Databases",
+      ],
+      answer: 1,
+    },
+    {
+      id: 10,
+      question:
+        "Which field focuses on teaching machines to understand human language?",
+      options: [
+        "Computer Vision",
+        "Robotics",
+        "Natural Language Processing",
+        "Data Mining",
+      ],
+      answer: 2,
+    },
   ],
   web: [
     {
       id: 1,
       question: "What does DOM stand for?",
-      options: ["Document Object Model", "Data Object Mode", "Digital Ordinance Map", "Desktop Orientation"],
-      answer: 0
+      options: [
+        "Document Object Model",
+        "Data Object Mode",
+        "Digital Ordinance Map",
+        "Desktop Orientation",
+      ],
+      answer: 0,
     },
     {
       id: 2,
       question: "Which tag is used for the largest heading?",
       options: ["<head>", "<h6>", "<h1>", "<header>"],
-      answer: 2
+      answer: 2,
     },
     {
       id: 3,
       question: "What is React mainly used for?",
-      options: ["Database Management", "UI Development", "Server Scripting", "Game Physics"],
-      answer: 1
+      options: [
+        "Database Management",
+        "UI Development",
+        "Server Scripting",
+        "Game Physics",
+      ],
+      answer: 1,
     },
     {
       id: 4,
       question: "CSS stands for?",
-      options: ["Creative Style Sheets", "Cascading Style Sheets", "Computer Style Synthetic", "Colorful Style System"],
-      answer: 1
+      options: [
+        "Creative Style Sheets",
+        "Cascading Style Sheets",
+        "Computer Style Synthetic",
+        "Colorful Style System",
+      ],
+      answer: 1,
     },
     {
       id: 5,
       question: "Which status code means 'Not Found'?",
       options: ["200", "500", "403", "404"],
-      answer: 3
-    }
+      answer: 3,
+    },
+    {
+      id: 6,
+      question: "Which JavaScript method converts JSON string into object?",
+      options: ["JSON.parse()", "JSON.stringify()", "parseInt()", "toObject()"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Which CSS property controls text size?",
+      options: ["font-style", "text-weight", "font-size", "size"],
+      answer: 2,
+    },
+    {
+      id: 8,
+      question: "Which HTTP method is used to send data to a server?",
+      options: ["GET", "FETCH", "POST", "READ"],
+      answer: 2,
+    },
+    {
+      id: 9,
+      question: "Which framework is developed by Google?",
+      options: ["React", "Vue", "Angular", "Svelte"],
+      answer: 2,
+    },
+    {
+      id: 10,
+      question: "What is the main purpose of cookies in web browsers?",
+      options: [
+        "Store user data",
+        "Run JavaScript",
+        "Load CSS",
+        "Encrypt servers",
+      ],
+      answer: 0,
+    },
   ],
   cloud: [
-    { id: 1, question: "Who owns AWS?", options: ["Apple", "Amazon", "Adobe", "Alibaba"], answer: 1 },
-    { id: 2, question: "What acts as 'Serverless' in AWS?", options: ["EC2", "S3", "Lambda", "RDS"], answer: 2 },
-    { id: 3, question: "SaaS stands for?", options: ["Software as a Service", "System as a Solution", "Storage as a Server", "Secure as a Service"], answer: 0 },
-    { id: 4, question: "Which is a valid Cloud deployment model?", options: ["Rainy", "Hybrid", "Stratus", "Nimbus"], answer: 1 },
-    { id: 5, question: "What is Docker used for?", options: ["Shipping", "Containerization", "Networking", "Database"], answer: 1 }
+    {
+      id: 1,
+      question: "Who owns AWS?",
+      options: ["Apple", "Amazon", "Adobe", "Alibaba"],
+      answer: 1,
+    },
+    {
+      id: 2,
+      question: "What acts as 'Serverless' in AWS?",
+      options: ["EC2", "S3", "Lambda", "RDS"],
+      answer: 2,
+    },
+    {
+      id: 3,
+      question: "SaaS stands for?",
+      options: [
+        "Software as a Service",
+        "System as a Solution",
+        "Storage as a Server",
+        "Secure as a Service",
+      ],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Which is a valid Cloud deployment model?",
+      options: ["Rainy", "Hybrid", "Stratus", "Nimbus"],
+      answer: 1,
+    },
+    {
+      id: 5,
+      question: "What is Docker used for?",
+      options: ["Shipping", "Containerization", "Networking", "Database"],
+      answer: 1,
+    },
+    {
+      id: 6,
+      question: "Which cloud model shares infrastructure among many users?",
+      options: ["Private", "Public", "Hybrid", "Community"],
+      answer: 1,
+    },
+    {
+      id: 7,
+      question: "Which service provides virtual machines in cloud?",
+      options: ["EC2", "Lambda", "CloudFront", "Route53"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "What does IaaS stand for?",
+      options: [
+        "Internet as a Service",
+        "Infrastructure as a Service",
+        "Interface as a Service",
+        "Instance as a Service",
+      ],
+      answer: 1,
+    },
+    {
+      id: 9,
+      question: "Which is used for scaling applications automatically?",
+      options: ["Auto Scaling", "CloudTrail", "VPC", "IAM"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Which cloud service distributes content globally?",
+      options: ["CDN", "VPN", "FTP", "SMTP"],
+      answer: 0,
+    },
   ],
   iot: [
-    { id: 1, question: "What does IoT stand for?", options: ["Input on Time", "Internet of Things", "Internal of Tech", "Integer of Type"], answer: 1 },
-    { id: 2, question: "Common microcontroller for IoT?", options: ["Pentium", "Arduino", "Snapdragon", "Ryzen"], answer: 1 },
-    { id: 3, question: "Which protocol is lightweight for IoT?", options: ["HTTP", "MQTT", "FTP", "SMTP"], answer: 1 },
-    { id: 4, question: "Zigbee is a type of?", options: ["Wireless Protocol", "Bee Species", "Cloud Service", "Database"], answer: 0 },
-    { id: 5, question: "Main concern in IoT?", options: ["Speed", "Security", "Color", "Weight"], answer: 1 }
+    {
+      id: 1,
+      question: "What does IoT stand for?",
+      options: [
+        "Input on Time",
+        "Internet of Things",
+        "Internal of Tech",
+        "Integer of Type",
+      ],
+      answer: 1,
+    },
+    {
+      id: 2,
+      question: "Common microcontroller for IoT?",
+      options: ["Pentium", "Arduino", "Snapdragon", "Ryzen"],
+      answer: 1,
+    },
+    {
+      id: 3,
+      question: "Which protocol is lightweight for IoT?",
+      options: ["HTTP", "MQTT", "FTP", "SMTP"],
+      answer: 1,
+    },
+    {
+      id: 4,
+      question: "Zigbee is a type of?",
+      options: [
+        "Wireless Protocol",
+        "Bee Species",
+        "Cloud Service",
+        "Database",
+      ],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Main concern in IoT?",
+      options: ["Speed", "Security", "Color", "Weight"],
+      answer: 1,
+    },
+    {
+      id: 6,
+      question: "Which sensor measures temperature?",
+      options: ["LDR", "Ultrasonic", "Thermistor", "Gas"],
+      answer: 2,
+    },
+    {
+      id: 7,
+      question: "Which board has built-in WiFi for IoT projects?",
+      options: ["Arduino Uno", "ESP8266", "8051", "PIC"],
+      answer: 1,
+    },
+    {
+      id: 8,
+      question:
+        "Which technology is used for short-range wireless communication?",
+      options: ["LoRa", "Bluetooth", "Satellite", "Fiber"],
+      answer: 1,
+    },
+    {
+      id: 9,
+      question: "Edge computing helps by?",
+      options: [
+        "Processing data near device",
+        "Storing all data in cloud",
+        "Slowing networks",
+        "Removing sensors",
+      ],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Which attack targets IoT devices commonly?",
+      options: ["DDoS", "Phishing", "SQL Injection", "Spooling"],
+      answer: 0,
+    },
   ],
   blockchain: [
-    { id: 1, question: "Who created Bitcoin?", options: ["Vitalik Buterin", "Satoshi Nakamoto", "Charlie Lee", "Mark Karpeles"], answer: 1 },
-    { id: 2, question: "What is a Smart Contract?", options: ["Legal paper", "Self-executing code", "AI Lawyer", "Cloud Agreement"], answer: 1 },
-    { id: 3, question: "Ethereum's currency is called?", options: ["Litecoin", "Ether", "Ripple", "Doge"], answer: 1 },
-    { id: 4, question: "Blockchain is essentially a...", options: ["Centralized Server", "Distributed Ledger", "Cloud Storage", "Social Network"], answer: 1 },
-    { id: 5, question: "What is a 'Miner's' job?", options: ["Dig for gold", "Validate transactions", "Hack data", "Write UI code"], answer: 1 }
-  ]
+    {
+      id: 1,
+      question: "Who created Bitcoin?",
+      options: [
+        "Vitalik Buterin",
+        "Satoshi Nakamoto",
+        "Charlie Lee",
+        "Mark Karpeles",
+      ],
+      answer: 1,
+    },
+    {
+      id: 2,
+      question: "What is a Smart Contract?",
+      options: [
+        "Legal paper",
+        "Self-executing code",
+        "AI Lawyer",
+        "Cloud Agreement",
+      ],
+      answer: 1,
+    },
+    {
+      id: 3,
+      question: "Ethereum's currency is called?",
+      options: ["Litecoin", "Ether", "Ripple", "Doge"],
+      answer: 1,
+    },
+    {
+      id: 4,
+      question: "Blockchain is essentially a...",
+      options: [
+        "Centralized Server",
+        "Distributed Ledger",
+        "Cloud Storage",
+        "Social Network",
+      ],
+      answer: 1,
+    },
+    {
+      id: 5,
+      question: "What is a 'Miner's' job?",
+      options: [
+        "Dig for gold",
+        "Validate transactions",
+        "Hack data",
+        "Write UI code",
+      ],
+      answer: 1,
+    },
+    {
+      id: 6,
+      question: "What does decentralization mean?",
+      options: [
+        "Single authority control",
+        "No central authority",
+        "One server",
+        "Private ownership",
+      ],
+      answer: 1,
+    },
+    {
+      id: 7,
+      question: "Which consensus mechanism is used by Bitcoin?",
+      options: ["PoS", "PoW", "DPoS", "PBFT"],
+      answer: 1,
+    },
+    {
+      id: 8,
+      question: "What is a block made of?",
+      options: [
+        "Transactions and hash",
+        "Only coins",
+        "Usernames",
+        "Passwords",
+      ],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "NFT stands for?",
+      options: [
+        "New Financial Token",
+        "Non-Fungible Token",
+        "Network File Transfer",
+        "Node Fund Tool",
+      ],
+      answer: 1,
+    },
+    {
+      id: 10,
+      question: "Which platform popularized smart contracts?",
+      options: ["Bitcoin", "Ethereum", "Solana", "Ripple"],
+      answer: 1,
+    },
+  ],
 };
