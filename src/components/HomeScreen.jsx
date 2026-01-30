@@ -31,10 +31,11 @@ export default function HomeScreen({ onStart, leaderboards }) {
       <div className="hero-section animate-float" style={{ textAlign: 'center', marginBottom: '4rem', zIndex: 2 }}>
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <img src={wtmLogo} alt="Women Techmakers Logo" style={{ maxWidth: '200px', marginBottom: '0.0rem'}} />
+          <h3>X</h3>
           <img src={shebuilds} alt="Shebuilds Logo" style={{ maxWidth: '300px', marginBottom: '0.0rem'}} />
         </div>
         
-        <h1 style={{ 
+        <h1 style={{
           textAlign: "center",
           fontSize: '5rem', 
           fontWeight: '800', 
