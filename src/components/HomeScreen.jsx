@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LeaderboardScreen from './leaderboard';
 import wtmLogo from '../assets/WTM.png';
-import shebuilds from '../assets/shebuilds1.png';
+import shebuilds from '../assets/shebuilds.png';
 
 export default function HomeScreen({ onStart, leaderboards }) {
   const [showLeaderboard, setShowLeaderboard] = useState(false);
