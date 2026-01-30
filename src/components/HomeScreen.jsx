@@ -31,7 +31,7 @@ export default function HomeScreen({ onStart, leaderboards }) {
       <div className="hero-section animate-float" style={{ textAlign: 'center', marginBottom: '4rem', zIndex: 2 }}>
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <img src={wtmLogo} alt="Women Techmakers Logo" style={{ maxWidth: '200px', marginBottom: '0.0rem'}} />
-          <img src={shebuilds} alt="Shebuilds Logo" style={{ maxWidth: '400px', marginBottom: '0.0rem'}} />
+          <img src={shebuilds} alt="Shebuilds Logo" style={{ maxWidth: '300px', marginBottom: '0.0rem'}} />
         </div>
         
         <h1 style={{ 
@@ -79,8 +79,8 @@ export default function HomeScreen({ onStart, leaderboards }) {
           width: "60px",
           height: "60px",
           borderRadius: "50%",
-          background: "rgba(255, 255, 255, 0.15)", // 🔹 transparent background only
-          color: "#000",                          // 🏆 stays solid
+          background: "rgba(255, 255, 255, 0.15)", 
+          color: "#000",                          
           fontSize: "24px",
           fontWeight: "bold",
           border: "none",
